@@ -16,14 +16,14 @@
     "print-config": "eslint --print-config ./index.js > ./print-config.json"
   },
   "author": "chenghuai",
-  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
+  "homepage": "https://github.com/encode-studio-fe-web/fe-spec#readme",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
+    "url": "git+https://github.com/encode-studio-fe-web/fe-spec.git"
   },
   "bugs": {
-    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
+    "url": "https://github.com/encode-studio-fe-web/fe-spec/issues"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

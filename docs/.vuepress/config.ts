@@ -110,13 +110,13 @@ export default defineConfig4CustomTheme({
     footer: {
       createYear: 2023,
       copyrightInfo:
-        'encode studio | <a href="https://github.com/encode-studio-fe/fe-spec" target="_blank">github</a>',
+        'encode studio | <a href="https://github.com/encode-studio-fe-web/fe-spec" target="_blank">github</a>',
     },
 
     extendFrontmatter: {
       author: {
         name: '澄怀',
-        link: 'https://github.com/encode-studio-fe/fe-sepc',
+        link: 'https://github.com/encode-studio-fe-web/fe-sepc',
       },
     },
   },
