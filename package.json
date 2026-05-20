@@ -1,0 +1,25 @@
+{
+  "name": "fe-spec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.4",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiangzaiFan/fe-spec.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/qiangzaiFan/fe-spec/issues"
+  },
+  "homepage": "https://github.com/qiangzaiFan/fe-spec#readme",
+  "devDependencies": {
+    "lerna": "^9.0.7"
+  }
+}
