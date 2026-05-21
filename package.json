@@ -6,7 +6,13 @@
   "scripts": {
     "preinstall":"npx only-allow pnpm",
     "prepare":"husky install",
-    "test": "lerna run test"
+    "init":"pnpm install",
+    "clean":"lerna clean && rm -rf node_modules",
+    "test": "lerna run test",
+    "docs:dev":"vuepress dev docs",
+    "docs:build":"vuepress build docs",
+    "deploy":"bash deploy.sh",
+    "publish":"lerna publish"
   },
   "keywords": [],
   "author": "",
