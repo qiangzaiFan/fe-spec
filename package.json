@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall":"npx only-allow pnpm",
+    "prepare":"husky install",
+    "test": "lerna run test"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,11 @@
   },
   "homepage": "https://github.com/qiangzaiFan/fe-spec#readme",
   "devDependencies": {
-    "lerna": "^9.0.7"
+    "husky": "^9.1.7",
+    "lerna": "^9.0.7",
+    "markdownlint-cli": "^0.48.0"
+  },
+  "dependencies": {
+    "conventional-changelog-cli": "^5.0.0"
   }
 }
