@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall":"npx only-allow pnpm",
-    "prepare":"husky install",
-    "init":"pnpm install",
-    "clean":"lerna clean && rm -rf node_modules",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "init": "pnpm install",
+    "clean": "lerna clean && rm -rf node_modules",
     "test": "lerna run test",
-    "docs:dev":"vuepress dev docs",
-    "docs:build":"vuepress build docs",
-    "deploy":"bash deploy.sh",
-    "publish":"lerna publish"
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "deploy": "bash deploy.sh",
+    "publish": "lerna publish"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/qiangzaiFan/fe-spec#readme",
   "devDependencies": {
+    "@commitlint/cli": "^20.5.3",
     "husky": "^9.1.7",
     "lerna": "^9.0.7",
     "markdownlint-cli": "^0.48.0"
