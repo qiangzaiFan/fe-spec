@@ -1,4 +1,6 @@
 {
+	// 将项目内的专有名词加入拼写检查白名单，避免 VS Code 误报。
 	"cSpell.words": ["chenghuai", "commitlint", "stylelint", "vuepress"],
+	// 仓库依赖较多时，关闭 Git 扩展针对大仓库的提示告警。
 	"git.ignoreLimitWarning": true
 }

@@ -1,2 +1,5 @@
+# pnpm workspace 入口配置。
+# 这里声明哪些目录下的子项目会被 pnpm 识别为 monorepo 包。
 packages:
+  # 将 packages 目录下的每个一级子目录都视为一个独立工作区包。
   - 'packages/*'

@@ -1,11 +1,14 @@
+# 编辑器临时文件。
 *~
 *.swp
 *.log
 
+# macOS / JetBrains / 临时目录产物。
 .DS_Store
 .idea/
 .temp/
 
+# 常见构建输出目录。
 dist/
 build/
 lib/
@@ -13,7 +16,9 @@ es/
 coverage/
 release/
 
+# 依赖安装目录，不纳入版本控制。
 node_modules/
 
+# 工具缓存与本地导出目录。
 .cache/
 out/

@@ -1,1 +1,7 @@
-npx --no -- commitlint --edit "$1"
+#!/usr/bin/env sh
+# 加载 Husky 提供的运行时环境，确保 Git hook 在不同终端里都能工作。
+. "$(dirname -- "$0")/_/husky.sh"
+
+# 使用 commitlint 校验本次提交信息。
+# $1 是 Git 传给 hook 的 commit message 临时文件路径。
+npx commitlint --edit "$1"
