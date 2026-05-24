@@ -1,5 +1,9 @@
 {
   "name": "fe-spec",
+  "private": true,
+  "workspaces": [
+    "papckages/*"
+  ],
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -34,6 +38,10 @@
     "markdownlint-cli": "^0.48.0"
   },
   "dependencies": {
-    "conventional-changelog-cli": "^5.0.0"
+    "commitlint-config": "file:packages\\commitlint-config"
+  },
+  "publicConfig":{
+    "access":"public",
+    "registry":"http://registry.npmjs.org/"
   }
 }
