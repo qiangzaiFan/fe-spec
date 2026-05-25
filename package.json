@@ -1,5 +1,5 @@
 {
-  "name": "fe-spec",
+  "name": "fe-spec-wq",
   "private": true,
   "workspaces": [
     "papckages/*"
