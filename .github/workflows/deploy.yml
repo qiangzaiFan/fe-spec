@@ -38,7 +38,7 @@ jobs:
       - name: Build docs
         run: pnpm run docs:build
 
-      # 将构建好的静态站点发布到 gh-pages 分支。
+      # 将构建好的静态站点发布到 gh-pages 分支。ACCESS_TOKEN 当前能够去访问github的权限，github 头像 setting developer settings --> personal access tokens -> tokwna
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:

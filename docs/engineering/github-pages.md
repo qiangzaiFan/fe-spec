@@ -37,12 +37,13 @@ author:
 ## 2. 创建 Fine-grained PAT
 
 本文推荐使用 `Fine-grained personal access token` 作为 `ACCESS_TOKEN`。
+选择 classic tokens
 
 ### 2.1. 进入令牌创建页面
 
 依次打开：
 
-`GitHub -> Settings -> Developer settings -> Personal access tokens -> Fine-grained tokens`
+`GitHub -> 头像-> Settings -> Developer settings -> Personal access tokens -> Fine-grained tokens`
 
 然后点击 `Generate new token`。
 
@@ -54,6 +55,7 @@ author:
 - Description：`Deploy VuePress site to GitHub Pages`
 - Expiration：根据团队安全要求设置有效期
 - Resource owner：选择当前拥有仓库 `qiangzaiFan/fe-spec` 的账号
+- 我的对应token <your-token>
 
 ### 2.3. 选择仓库范围
 
