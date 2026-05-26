@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.30" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" href="/img/logo.png"><meta name="keywords" content="前端编码规范工程化"><title>印客学院</title><meta name="description" content="前端编码规范工程化">
+    <link rel="preload" href="/fe-spec/assets/style-BW-hO7ic.css" as="style"><link rel="stylesheet" href="/fe-spec/assets/style-BW-hO7ic.css">
+    <link rel="modulepreload" href="/fe-spec/assets/app-8-RulkHY.js"><link rel="modulepreload" href="/fe-spec/assets/404.html-B58_B97o.js">
+    <link rel="prefetch" href="/fe-spec/assets/docs-Dy3z2QhK.js" as="script"><link rel="prefetch" href="/fe-spec/assets/encode-fe-lint-CLl9SH2U.js" as="script"><link rel="prefetch" href="/fe-spec/assets/css-Y_hf_vse.js" as="script"><link rel="prefetch" href="/fe-spec/assets/html-BT9j3Wko.js" as="script"><link rel="prefetch" href="/fe-spec/assets/javascript-nBJkdPCJ.js" as="script"><link rel="prefetch" href="/fe-spec/assets/node-CURGM2kT.js" as="script"><link rel="prefetch" href="/fe-spec/assets/typescript-C_5xfrZK.js" as="script"><link rel="prefetch" href="/fe-spec/assets/changelog-DJh9s_ui.js" as="script"><link rel="prefetch" href="/fe-spec/assets/doc-DJ_Udzjp.js" as="script"><link rel="prefetch" href="/fe-spec/assets/git-CaLf8ECM.js" as="script"><link rel="prefetch" href="/fe-spec/assets/commitlint-CmTPaZqy.js" as="script"><link rel="prefetch" href="/fe-spec/assets/eslint-plugin-CGHoz5lr.js" as="script"><link rel="prefetch" href="/fe-spec/assets/eslint-DTrwOBIu.js" as="script"><link rel="prefetch" href="/fe-spec/assets/markdownlint-9jByvdeM.js" as="script"><link rel="prefetch" href="/fe-spec/assets/stylelint-OBo1k-l4.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-ec9c1744><main class="page" data-v-ec9c1744><div vp-content data-v-ec9c1744><h1 data-v-ec9c1744>404</h1><blockquote data-v-ec9c1744>There&#39;s nothing here.</blockquote><a class="route-link" href="/fe-spec/" data-v-ec9c1744>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/fe-spec/assets/app-8-RulkHY.js" defer></script>
+  </body>
+</html>
