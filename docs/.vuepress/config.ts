@@ -42,6 +42,7 @@ export default defineUserConfig({
           { text: 'Git 规范', link: '/engineering/git.md' },
           { text: '文档规范', link: '/engineering/doc.md' },
           { text: 'CHANGELOG 规范', link: '/engineering/changelog.md' },
+          { text: 'GitHub Pages 发布', link: '/engineering/github-pages.md' },
         ],
       },
       {
@@ -76,6 +77,7 @@ export default defineUserConfig({
           '/engineering/git.md',
           '/engineering/doc.md',
           '/engineering/changelog.md',
+          '/engineering/github-pages.md',
         ],
       },
       {
