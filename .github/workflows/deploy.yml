@@ -1,33 +1,41 @@
 name: Build and Deploy
+
 on:
-    push:
-        branches:
-            - master
+  push:
+    branches:
+      - master
+      - fukeMain
+  workflow_dispatch:
+
 jobs:
-    build-and-deploy:
-        runs-on: ubuntu-latest
-        permissions:
-            contents: write
-        steps:
-            - name: Checkout  ️
-              uses: actions/checkout@v2.3.1
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
 
-            - name: lock npm version
-              uses: actions/setup-node@v3
-              with:
-                  node-version: 18.14.0
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
 
-            - name: Install and Build
-              run: |
-                  npm i -g pnpm
-                  pnpm run init
-                  pnpm run docs:build
-              env:
-                  NODE_OPTIONS: '--max_old_space_size=4096 --openssl-legacy-provider'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.0
+          cache: pnpm
 
-            - name: Deploy
-              uses: JamesIves/github-pages-deploy-action@4.1.3
-              with:
-                  BRANCH: gh-pages
-                  FOLDER: docs/.vuepress/dist
-                  ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build docs
+        run: pnpm run docs:build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: docs/.vuepress/dist
+          token: ${{ secrets.ACCESS_TOKEN }}
