@@ -39,6 +39,8 @@
   "devDependencies": {
     "@commitlint/cli": "^20.5.3",
     "@vuepress/bundler-vite": "2.0.0-rc.30",
+    "@vuepress/plugin-copy-code": "2.0.0-rc.130",
+    "@vuepress/plugin-medium-zoom": "2.0.0-rc.130",
     "@vuepress/theme-default": "2.0.0-rc.130",
     "husky": "^9.1.7",
     "lerna": "^9.0.7",
