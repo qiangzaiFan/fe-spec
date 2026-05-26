@@ -9,5 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.33.4"
+  "packageManager": "pnpm@10.33.4",
+  "gitHead": "8288868ea6b2d7bd6e79b4b916c599eb6016e4a1"
 }
