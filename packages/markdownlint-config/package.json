@@ -2,13 +2,19 @@
   "name": "fe-spec-qz-markdownlint-config",
   "version": "1.0.0-alpha.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.json",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "packageManager": "pnpm@10.33.4",
-  "gitHead": "8288868ea6b2d7bd6e79b4b916c599eb6016e4a1"
+  "devDependencies": {
+    "markdownlint": "^0.40.0"
+  }
 }

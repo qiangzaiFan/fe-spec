@@ -2,7 +2,7 @@
   "name": "fe-spec-qz",
   "private": true,
   "workspaces": [
-    "papckages/*"
+    "packages/*"
   ],
   "version": "1.0.0",
   "description": "",
@@ -52,8 +52,8 @@
   "dependencies": {
     "commitlint-config": "file:packages\\commitlint-config"
   },
-  "publicConfig": {
+  "publishConfig": {
     "access": "public",
-    "registry": "http://registry.npmjs.org/"
+    "registry": "https://registry.npmjs.org/"
   }
 }
