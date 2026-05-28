@@ -1,47 +1,40 @@
-# GitHub Actions 工作流名称，会展示在仓库的 Actions 页面。
 name: Build and Deploy
 
-# 这里只在推送到 fukeMain 分支时触发文档构建与部署。
 on:
   push:
     branches:
       - fukeMain
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
-    # 使用 GitHub 托管的 Ubuntu 环境执行构建。
     runs-on: ubuntu-latest
     permissions:
-      # 允许工作流把构建产物推送到 gh-pages 分支。
       contents: write
     steps:
-      # 拉取当前仓库代码，供后续安装依赖和构建使用。
       - name: Checkout
         uses: actions/checkout@v4
-
-      # 固定 Node.js 版本，避免不同运行时导致构建结果不一致。
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: pnpm
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
           version: 10
 
-      # 安装依赖并执行文档构建脚本。
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.19.0
+          cache: pnpm
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
       - name: Build docs
         run: pnpm run docs:build
 
-      # 将构建好的静态站点发布到 gh-pages 分支。ACCESS_TOKEN 当前能够去访问github的权限，github 头像 setting developer settings --> personal access tokens -> tokwna
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          BRANCH: gh-pages
-          FOLDER: docs/.vuepress/dist
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          branch: gh-pages
+          folder: docs/.vuepress/dist
+          token: ${{ github.token }}
