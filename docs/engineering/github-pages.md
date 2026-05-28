@@ -55,7 +55,7 @@ author:
 - Description：`Deploy VuePress site to GitHub Pages`
 - Expiration：根据团队安全要求设置有效期
 - Resource owner：选择当前拥有仓库 `qiangzaiFan/fe-spec` 的账号
-- 我的对应token <your-token>
+- 我的对应token `your-token`
 
 ### 2.3. 选择仓库范围
 
