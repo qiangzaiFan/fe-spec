@@ -3,7 +3,6 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - master
       - fukeMain
   workflow_dispatch:
 
@@ -38,4 +37,4 @@ jobs:
         with:
           branch: gh-pages
           folder: docs/.vuepress/dist
-          token: ${{ secrets.ACCESS_TOKEN }}
+          token: ${{ github.token }}
