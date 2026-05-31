@@ -1,0 +1,26 @@
+{
+  "name": "fe-spec-qz-eslint-config",
+  "version": "1.0.0-alpha.0",
+  "description": "> TODO: description",
+  "homepage": "https://github.com/qiangzaiFan/fe-spec/tree/main/packages/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/qiangzaiFan/fe-spec/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qiangzaiFan/fe-spec.git"
+  },
+  "license": "ISC",
+  "author": "wangqiangfan <wangqiangfan@users.noreply.gitee.com>",
+  "main": "lib/eslint-config.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "node ./__tests__/eslint-config.test.js"
+  }
+}
