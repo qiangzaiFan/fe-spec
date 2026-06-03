@@ -1,7 +1,13 @@
 'use strict';
 
-const eslintConfig = require('..');
-const assert = require('assert').strict;
+const assert = require('node:assert/strict');
+const test = require('node:test');
 
-assert.strictEqual(eslintConfig(), 'Hello from eslintConfig');
-console.info('eslintConfig tests passed');
+const eslintConfig = require('..');
+
+test('exports a shareable eslint config object', () => {
+  assert.equal(typeof eslintConfig, 'object');
+  assert.equal(eslintConfig.parser, '@babel/eslint-parser');
+  assert.ok(Array.isArray(eslintConfig.extends));
+  assert.ok(eslintConfig.extends.length > 0);
+});
