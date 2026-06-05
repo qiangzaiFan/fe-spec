@@ -104,6 +104,15 @@ importers:
         specifier: ^4.17.21
         version: 4.18.1
 
+  packages/eslint-plugin:
+    dependencies:
+      fs-extra:
+        specifier: ^11.3.5
+        version: 11.3.5
+      require-all:
+        specifier: ^3.0.0
+        version: 3.0.0
+
   packages/markdownlint-config:
     devDependencies:
       markdownlint:
@@ -5101,6 +5110,10 @@ packages:
 
   rehype-stringify@10.0.1:
     resolution: {integrity: sha512-k9ecfXHmIPuFVI61B9DeLPN0qFHfawM6RsuX48hoqlaKSF61RskNjSm1lI8PhBEM0MRdLxVVm4WmTqJQccH9mA==}
+
+  require-all@3.0.0:
+    resolution: {integrity: sha512-jPGN876lc5exWYrMcgZSd7U42P0PmVQzxnQB13fCSzmyGnqQWW4WUz5DosZ/qe24hz+5o9lSvW2epBNZ1xa6Fw==}
+    engines: {node: '>= 0.8'}
 
   require-directory@2.1.1:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
@@ -12175,6 +12188,8 @@ snapshots:
       '@types/hast': 3.0.4
       hast-util-to-html: 9.0.5
       unified: 11.0.5
+
+  require-all@3.0.0: {}
 
   require-directory@2.1.1: {}
 

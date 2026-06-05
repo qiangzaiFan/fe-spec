@@ -18,6 +18,7 @@ release/
 
 # 依赖安装目录，不纳入版本控制。
 node_modules/
+package-lock.json
 
 # 工具缓存与本地导出目录。
 .cache/
