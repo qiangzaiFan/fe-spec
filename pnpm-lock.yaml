@@ -113,6 +113,9 @@ importers:
         specifier: ^3.0.0
         version: 3.0.0
     devDependencies:
+      eslint:
+        specifier: ^8.57.1
+        version: 8.57.1
       jest:
         specifier: ^30.4.2
         version: 30.4.2(@types/node@25.9.1)
