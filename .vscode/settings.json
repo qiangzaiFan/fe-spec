@@ -1,6 +1,18 @@
 {
 	// 将项目内的专有名词加入拼写检查白名单，避免 VS Code 误报。
 	"cSpell.words": ["chenghuai", "commitlint", "stylelint", "vuepress"],
+	// 保存时格式化当前文件。
+	"editor.formatOnSave": true,
+	// 使用 Prettier 处理基础代码格式，ESLint 再负责规则修复。
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	// 保存时自动修复 ESLint / Stylelint 可修复的问题。
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "explicit",
+		"source.fixAll.stylelint": "explicit"
+	},
+	// 让 ESLint 插件识别 monorepo 中各 package 的配置。
+	"eslint.workingDirectories": [{ "mode": "auto" }],
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "vue"],
 	// 仓库依赖较多时，关闭 Git 扩展针对大仓库的提示告警。
 	"git.ignoreLimitWarning": true,
 	// 项目已通过 packageManager 和 preinstall 明确使用 pnpm。
