@@ -1,19 +1,3 @@
-/**
- *   'eslint',
-  'husky',
-  'markdownlint',
-  'prettier',
-  'stylelint',
-  'tslint', 我们可能是依赖的
- * 我们当前插件依赖了哪些依赖项，对依赖的插件进行全局匹配，匹配完成之后，全局进行删除。
- *
- * 创建待删除的文档，都符合后，通过问答式的方式删除，
- *
- * 这个方案也是很多node项目中，你要做一个大的break change的版本升级，就可以通过这种方式，
- * 做大版本的升级。大版本升级，它有不同的依赖项配置，怎么办呢，我们就可以通过这个cli的方式，
- * 主动的声明式的方式，去解决这样的问题。
- */
-
 import path from 'path';
 import fs from 'fs-extra';
 import glob from 'glob';

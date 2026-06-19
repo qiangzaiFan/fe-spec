@@ -6,12 +6,12 @@
   "stylelint.validate": [<%- stylelintExt.map((ext) => `"${ext.replace(/^\./, '')}"`).join(',') %>],
   <%_ } _%>
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true<%= enableStylelint || enableMarkdownlint ? ',' : ''%>
+    "source.fixAll.eslint": "always"<%= enableStylelint || enableMarkdownlint ? ',' : ''%>
     <%_ if (enableStylelint) { _%>
-    "source.fixAll.stylelint": true<%= enableMarkdownlint ? ',' : ''%>
+    "source.fixAll.stylelint": "always"<%= enableMarkdownlint ? ',' : ''%>
     <%_ } _%>
     <%_ if (enableMarkdownlint) { _%>
-    "source.fixAll.markdownlint": true
+    "source.fixAll.markdownlint": "always"
     <%_ } _%>
   },
   <%_ if (enablePrettier) { _%>

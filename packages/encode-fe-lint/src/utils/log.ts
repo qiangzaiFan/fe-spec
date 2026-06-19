@@ -1,5 +1,3 @@
-// UNICODE 就是颜色
-
 import chalk from 'chalk';
 import { PKG_NAME, UNICODE } from './constants';
 
