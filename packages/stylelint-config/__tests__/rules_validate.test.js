@@ -1,11 +1,11 @@
 const assert = require('node:assert/strict')
 const path = require('node:path')
 const test = require('node:test')
-const stylelint = require('stylelint')
 
 test('stylelint config reports violations for invalid css', async () => {
+  const stylelint = await import('stylelint')
   const configPath = path.resolve(__dirname, './fixtures/index.css')
-  const result = await stylelint.lint({
+  const result = await stylelint.default.lint({
     configFile: path.join(__dirname, '../index.js'),
     files: configPath,
     fix: true

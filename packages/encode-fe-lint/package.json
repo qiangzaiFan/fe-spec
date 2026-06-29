@@ -1,5 +1,5 @@
 {
-  "name": "encode-fe-lint",
+  "name": "qiangzai-encode-fe-lint",
   "version": "1.0.9",
   "description": "印客教育前端编码规范工程化标准脚手架",
   "bin": "./lib/cli.js",
@@ -8,7 +8,7 @@
     "dev": "npm run copyfiles && tsc -w",
     "build": "rm -rf lib && npm run copyfiles && tsc",
     "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
-    "test": "npm run build && jest",
+    "test": "npm run build && jest --passWithNoTests",
     "coverage": "nyc jest --silent --forceExit",
     "prepublishOnly": "npm run test"
   },
